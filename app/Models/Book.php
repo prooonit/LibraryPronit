@@ -10,3 +10,6 @@ class Book extends Model
     protected $fillable = ['title', 'author', 'is_issued'];
 
 }
+
+
+//testing
