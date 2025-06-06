@@ -4,6 +4,7 @@
     <h1>Edit Book</h1>
 <form method="POST" action="{{ route('books.update', $book->id) }}">
     @csrf
+    @method('PATCH')
     Title: <input type="text" name="title" value="{{ $book->title }}"><br>
     Author: <input type="text" name="author" value="{{ $book->author }}"><br>
     <label>
